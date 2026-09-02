@@ -1,0 +1,56 @@
+# ==========================================
+# GitHub Project Pusher - Git Ignore Rules
+# ==========================================
+
+# 1. Environment & Secrets (NEVER commit secrets or tokens)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.cert
+*.crt
+
+# 2. SQLite Databases & Local Storage
+database/*.sqlite
+database/*.sqlite3
+database/*.db
+!database/schema.sql
+
+# 3. Server Logs & Debug Output
+*.log
+logs/
+error_log
+access_log
+npm-debug.log*
+yarn-debug.log*
+
+# 4. Temporary Files & User Uploads
+uploads/
+temp/
+tmp/
+cache/
+*.tmp
+*.bak
+*.swp
+
+# 5. OS Generated Metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+__MACOSX/
+
+# 6. IDE & Code Editor Configurations
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# 7. Dependencies & Vendor Folders (if Composer or NPM are used)
+vendor/
+node_modules/
